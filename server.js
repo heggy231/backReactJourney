@@ -19,4 +19,6 @@ app.use('/api/cityposts', citypostRoutes)
 
 app.use('/user', userRoutes)
 
-app.listen(3001, () => console.log('Listening on port 3001 :)'))
+// app.listen(3001, () => console.log('Listening on port 3001 :)'))
+
+app.listen(process.env.PORT, () => console.log("Listening on PORT"))
